@@ -1,5 +1,6 @@
 import { defineComponent } from 'vue';
 import LoginInput from './LoginInput/LoginInput.vue'
+
 export default defineComponent({
   name: 'LoginForm',
   components: { LoginInput },
@@ -8,18 +9,19 @@ export default defineComponent({
   },
   data() {
     return {
-        email: '',
-        password: '',
-        emailLabel: 'Email',
-        passwordLabel: "Password"
+        text: '',
+        
     }
   },
   
   methods: {
     handleSubmit(e:any){
         e.preventDefault()
-        console.log('submitted', this.email, this.password)
+        console.log('submitted', this.text)
 
-    }
-  }
+    },
+    
+   
+  },
+  props: ['text']
 });

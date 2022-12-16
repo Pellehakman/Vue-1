@@ -7,15 +7,13 @@ export default defineComponent({
       data() {
         return {
             email: '',
-            
         }
       },
       
       methods: {
        
             
-    
         
       },
-      props: ['label']
+      props: ['text']
 })
