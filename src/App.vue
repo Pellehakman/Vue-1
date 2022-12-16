@@ -3,12 +3,7 @@ import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 import counterStore from './components/stores/counter'
 
-setup(){
-  const { state, getters, inc} = counterStore
-  return { state, getters, inc}
 
-
-}
 </script>
 
 <template>
@@ -17,12 +12,7 @@ setup(){
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
-      
-      
-  <div class="item">
-    <h4> {{ state.count}} x2 = {{ getters.times2}}</h4>
-    <button @click="inc(1)">inc</button >
-  </div>
+   
 
 
 
