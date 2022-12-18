@@ -1,11 +1,26 @@
 // import { defineComponent } from "vue";
 
-import { defineComponent } from "vue"
-const [count, setCount] = useState<string>('')
-console.log(count)
-export default defineComponent({
+import type { Player } from "@/types"
+import { defineComponent, ref } from "vue"
 
-    name: 'InputForm',
+
+export default defineComponent({
+    name: "inputForm",
+    components: {},
+    setup(){
+        const players = ref<Player[]>([
+            {name: 'Phawkman', weapon: 'M416', id: "1"},
+            {name: 'Ekkann', weapon: 'SLR', id: "2"},
+            {name: 'McWonder', weapon: 'SKS', id: "3"},
+            {name: 'Lirapub', weapon: 'Berryl', id: "4"},
+            
+        ])
+        return{ players
+
+        }
+    },
+
+   
     data(){
         return{
             message: 'hello world',
@@ -17,7 +32,7 @@ export default defineComponent({
     methods:{
         handleSubmit()  {
             console.log(this.text, this.password)
-            setCount(this.text)
+            
         }
     }
 
@@ -28,6 +43,3 @@ export default defineComponent({
 
 })
 
-function useState<T>(arg0: string): [any, any] {
-    throw new Error("Function not implemented.")
-}
