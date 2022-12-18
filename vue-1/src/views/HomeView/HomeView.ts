@@ -1,4 +1,6 @@
-import NoSite from "@/components/NoSite/NoSite.vue";
+
+
+import InputForm from "@/components/InputForm/InputForm.vue";
 import { defineComponent, ref } from "vue";
 
 
@@ -22,7 +24,7 @@ export default defineComponent({
 
     },
     components: {
-        NoSite
+        InputForm
     }
         
 });

@@ -6,11 +6,8 @@
 
   
   <main>
-    shi
-    <NoSite />
-   <form @submit.prevent="handleSubmit">
-    <input type="text" v-model="textInput" />
-    <input type="submit" />
-   </form>
+  
+ <InputForm />
+   
   </main>
 </template>
