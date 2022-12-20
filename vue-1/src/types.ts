@@ -6,5 +6,8 @@ export interface InputFormType {
 export interface Player {
   name: string,
   weapon: string,
+  kills: number;
   id: string
 }
+
+export type OrderTerm = 'name' | 'kills'

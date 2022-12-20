@@ -1,5 +1,7 @@
 
 
+import Booking from "@/components/Booking/Booking.vue";
+import Calender from "@/components/Calender/Calender.vue";
 import InputForm from "@/components/InputForm/InputForm.vue";
 import { defineComponent, ref } from "vue";
 
@@ -24,7 +26,7 @@ export default defineComponent({
 
     },
     components: {
-        InputForm
+        InputForm, Calender,  Booking
     }
         
 });
